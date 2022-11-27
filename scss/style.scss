@@ -1,0 +1,381 @@
+/* VARIABLE */
+
+// Colors
+$primary:#2c3e50; //brand color #c82602
+$secondary: #34495e; //hover, accent color
+$active: #39526a; //active menu
+$basetext: #464646; //paragraph, text
+$baseheading: #27292f; //heading and titles
+$bgcolor: #f5f5f5; // site background
+$bordercolor: #cecece; //form border color
+$linkcolor: #f39c12;
+$linkcolor2: #f2bb63;
+$gradient: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+
+
+
+// Font Family //
+$fontbase: Roboto,
+sans-serif;
+$text-line-height: 150%;
+
+//fonts size
+$h1: 5rem;
+$h2: 2.8rem;
+$h3: 2.5rem;
+$h4: 2.3rem;
+$p: 1.6rem;
+$fontbutton: 2rem;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $fontbase;
+    font-weight: 200;
+    font-size: $p;
+    color: $basetext;
+    background-color: $bgcolor;
+    position: relative;
+    line-height: $text-line-height;
+}
+
+
+h1 {
+    font-size: $h1;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: $h2;
+}
+
+h3 {
+    font-size: $h3;
+}
+
+h4 {
+    font-size: $h4;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 2rem 0;
+    line-height: $text-line-height;
+}
+
+a {
+    color: $linkcolor;
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1024px;
+
+}
+
+/* NAV */
+
+.nav {
+    background-color: $primary;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+
+
+    &__links {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        list-style: none;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5rem;
+        min-width: 15rem;
+        color: $bgcolor;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $secondary;
+        }
+
+        &--active {
+            background-color: $active;
+        }
+    }
+
+}
+
+/* HERO */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    margin-top: 5rem;
+    padding: 2rem;
+    background-image: $gradient, url(../img/courses.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    &__info {
+        color: $bgcolor;
+        text-align: center;
+    }
+}
+
+.cta-button {
+    min-width: 15rem;
+    border: none;
+    background-color: $linkcolor;
+    color: $bgcolor;
+    font-size: $fontbutton;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: ease-in-out;
+
+    &:hover {
+        background-color: $linkcolor2;
+
+    }
+
+    &--big {
+        min-width: 20rem;
+        font-size: 2.5rem;
+
+
+    }
+
+}
+
+/* FEATURES*/
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 6rem auto;
+
+}
+
+.feature {
+    flex-basis: 30%;
+    text-align: center;
+    padding: 2rem;
+
+    &__icon {
+        font-size: 3.5rem;
+        color: $linkcolor;
+    }
+}
+
+/* FEATURES*/
+
+.about {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    padding: 6rem 0;
+    background-color: $linkcolor;
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img,
+    &__info {
+        flex-basis: 50%;
+        padding: 2rem;
+    }
+
+    &__img-container {
+        width: 100%;
+        height: 300px;
+        background-image: url(../img/team.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+}
+
+
+/* HERO */
+
+.testimonials {
+    padding: 6rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.testimonial {
+    flex-basis: 80%;
+    text-align: center;
+
+
+    &__text {
+        text-align: center;
+
+    }
+
+    &-arow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 10%;
+        font-size: 2rem;
+
+    }
+
+    &__ruler {
+        margin: 2rem auto;
+        width: 30%;
+        min-width: 200px;
+    }
+
+    &__avatar {
+        border-radius: 50%;
+    }
+
+    &__name {
+        margin-top: 1rem;
+    }
+}
+
+
+/* contact*/
+
+.contact {
+    background-color: $secondary;
+    color: $bgcolor;
+    padding: 6rem 0;
+
+
+    &-container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    &__data,
+    &-form {
+        flex-basis: 50%;
+        padding: 2rem;
+    }
+
+    &__data {
+        h2 {
+            margin-top: 0;
+        }
+
+    }
+
+    &__ruler {
+        margin: 2rem 0;
+        width: 50%;
+    }
+
+    &__address-line {
+        display: flex;
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+}
+
+.contact-form {
+    &__input {
+        min-height: 3rem;
+        margin-bottom: 1rem;
+        border: 1px solid $bgcolor;
+        border-radius: .5rem;
+        padding-left: 1rem;
+        outline: none;
+        color: $bgcolor;
+
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        &--transparent {
+            background-color: transparent;
+        }
+
+        &--fullwidth {
+            width: 100%;
+        }
+
+
+
+    }
+
+    &__submit {
+        background-color: $linkcolor;
+        width: 100%;
+        padding: 1rem;
+        border-style: none;
+        border-radius: .5rem;
+        font-size: 1.7rem;
+        color: $bgcolor;
+        cursor: pointer;
+        transition: background-color 0.5s ease-in-out;
+
+        &:hover {
+            background-color: $linkcolor2;
+        }
+    }
+
+
+}
+
+
+
+.footer {
+    background-color: $primary;
+    color: $bgcolor;
+
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        padding: 6rem 0;
+    }
+
+    &__header {
+        margin: 0;
+    }
+
+
+}
+.copyright{
+    padding: 1rem 0;
+    text-align: center;
+    background-color: #27292f;
+}

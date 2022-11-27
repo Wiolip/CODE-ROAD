@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c09818cd34.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav id="nav" class="nav">
+            <div class="container">
+                <ul class="nav__links">
+                    <a class="nav__link nav__link--active" href="#home">
+                        <li class="nav__link-item">Home</li>
+                    </a>
+                    <a class="nav__link " href="#features">
+                        <li class="nav__link-item">Features</li>
+                    </a>
+                    <a class="nav__link" href="#testimonials">
+                        <li class="nav__link-item"></li>Testimonials</li>
+                    </a>
+                    <a class="nav__link" href="#contact">
+                        <li class="nav__link-item">
+                            Contact</li>
+                    </a> </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero__info">
+                <h1 class="hero__header">The best online courses in the market</h1>
+                <h4 class="hero__sub-header">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Nulla quam
+                    velit, vulputate
+                    eu pharetra nec,
+                    mattis ac neque.
+                </h4>
+                <button class="cta-button">Buy now</button>
+            </div>
+        </section>
+
+        <section id="features" class="features container">
+            <div class="feature">
+                <i class="feature__icon fa-solid fa-earth-americas"></i>
+                <h4>Online access</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem debitis eveniet incidunt numquam
+                    voluptatum aut labore quisquam, maxime commodi, ducimus accusamus qui expedita dignissimos sunt.
+                    Numquam necessitatibus dignissimos aliquid neque!
+                </p>
+            </div>
+
+            <div class="feature">
+                <i class="feature__icon fa-solid fa-chalkboard-user"></i>
+                <h4>Best teacher</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem debitis eveniet incidunt numquam
+                    voluptatum aut labore quisquam, maxime commodi, ducimus accusamus qui expedita dignissimos sunt.
+                    Numquam necessitatibus dignissimos aliquid neque!
+                </p>
+            </div>
+
+            <div class="feature">
+                <i class="feature__icon fa-regular fa-hand-holding-dollar"></i>
+                <h4>Try free</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem debitis eveniet incidunt numquam
+                    voluptatum aut labore quisquam, maxime commodi, ducimus accusamus qui expedita dignissimos sunt.
+                    Numquam necessitatibus dignissimos aliquid neque!
+                </p>
+            </div>
+        </section>
+
+
+        <section id="about" class="about">
+            <div class="container about__container">
+
+                <div class="about__info">
+                    <h2 class="about__header">Our team - meet people behind the course!</h2>
+                    <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, provident
+                        nobis aut
+                        libero a quidem
+                        ducimus,
+                        sequi ad maxime, debitis sint obcaecati aperiam deserunt perferendis et tempora exercitationem
+                        alias
+                        sapiente.
+                    </p>
+                </div>
+
+                <div class="about__img">
+                    <div class="about__img-container">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="testimonials" class="container testimonials">
+
+            <div class="testimonial-arow"><i class="fa-solid fa-chevron-left"></i></div>
+
+            <div class="testimonial">
+                <p class="testimonial__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas soluta
+                    alias
+                    reprehenderit, maxime
+                    nobis molestiae nisi aut laborum quaerat necessitatibus. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit.</p>
+                <hr class="testimonial__ruler">
+                <figure>
+                    <img class="testimonial__avatar" src="./img/testim1.jpg" alt="testiomonials" width="60"></figure>
+                <figcaption>
+                    <p class="testimonial__name">Joe Doe</p>
+                </figcaption>
+
+            </div>
+
+            <div class="testimonial-arow"><i class="fa-solid fa-chevron-right"></i></div>
+        </section>
+
+
+        <section id="contact" class="contact ">
+
+            <div class="container contact-container">
+
+                <div class="contact__data">
+                    <h2>Get In Touch</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo saepe veritatis
+                        provident
+                        sequi,
+                        dolore ut laboriosam repellendus optio dolorum nam temporibus amet.
+                    </p>
+                    <hr class="contact__ruler">
+                    <div class="contact__address-line">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Address</p>
+                    </div>
+                    <div class="contact__address-line">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+48 100 200 300</p>
+                    </div>
+                </div>
+
+                <form action="https://form-data-to-html-table.examples.coderoad.pl" method="POST" class="contact-form">
+                    <div>
+                        <input type="text" placeholder="Name" name="name"
+                            class="contact-form__input contact-form__input--fullwidth contact-form__input--transparent" required>
+                    </div>
+                    <div>
+                        <input type="email" placeholder="E-mail" name="email"
+                            class="contact-form__input contact-form__input--fullwidth contact-form__input--transparent" required>
+                    </div>
+                    <div>
+                        <textarea name="message" type="text" rows="6" placeholder="Message"
+                            class="contact-form__input contact-form__input--fullwidth contact-form__input--transparent" required>
+                    </textarea>
+                    </div>
+
+                    <button class="contact-form__submit ">Send</button>
+                </form>
+
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer id="footer" class="footer ">
+        <div class="container footer-container">
+            <h2 class="footer__header">The best online courses in the market</h2>
+            <button class="cta-button cta-button--big">Buy now</button>
+        </div>
+        <div class="copyright ">
+            <span>Made by <a href="https://coderoad.pl">coderoad.pl </a></span>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
